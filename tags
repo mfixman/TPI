@@ -1,0 +1,68 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AUX_H	header/auxiliares.h	2;"	d
+ENCABEZADO_ARCHIVO	header/gateway.h	/^		enum {ENCABEZADO_ARCHIVO = 'G'};$/;"	e	enum:Gateway::__anon1
+ENCABEZADO_ARCHIVO	header/pregunta.h	/^		enum {ENCABEZADO_ARCHIVO = 'P'};$/;"	e	enum:Pregunta::__anon2
+ENCABEZADO_ARCHIVO	header/sms.h	/^		enum {ENCABEZADO_ARCHIVO = 'S'};$/;"	e	enum:SMS::__anon3
+ENCABEZADO_ARCHIVO	header/telco.h	/^		enum {ENCABEZADO_ARCHIVO = 'T'};$/;"	e	enum:TelCO::__anon4
+ENCABEZADO_ARCHIVO	header/trivia.h	/^		enum {ENCABEZADO_ARCHIVO = 'V'};$/;"	e	enum:Trivia::__anon5
+GATEWAY_H_INCLUDED	header/gateway.h	2;"	d
+Gateway	header/gateway.h	/^class Gateway {$/;"	c
+Keyword	header/tipos.h	/^typedef string Keyword;$/;"	t
+LISTA_H	header/lista.h	2;"	d
+Lista	header/lista.h	/^	Lista(){};$/;"	f	class:Lista
+Lista	header/lista.h	/^template<class T> class Lista {$/;"	c
+Numero	header/tipos.h	/^typedef int Numero;$/;"	t
+PREGUNTA_H_INCLUDED	header/pregunta.h	2;"	d
+Pregunta	header/pregunta.h	/^class Pregunta {$/;"	c
+Puntaje	header/tipos.h	/^typedef int Puntaje;$/;"	t
+SMS	header/sms.h	/^class SMS {$/;"	c
+SMS_H_INCLUDED	header/sms.h	2;"	d
+TELCO_H_INCLUDED	header/telco.h	2;"	d
+TIPOS_H	header/tipos.h	2;"	d
+TRIVIA_H_INCLUDED	header/trivia.h	2;"	d
+TelCO	header/telco.h	/^class TelCO {$/;"	c
+Texto	header/tipos.h	/^typedef string Texto;$/;"	t
+Trivia	header/trivia.h	/^class Trivia {$/;"	c
+Usuario	header/tipos.h	/^typedef int Usuario;$/;"	t
+_comandos	header/gateway.h	/^		Lista<Keyword> _comandos;$/;"	m	class:Gateway
+_ganadores	header/trivia.h	/^		Lista<Usuario> _ganadores;$/;"	m	class:Trivia
+_gateways	header/telco.h	/^		Lista<Gateway> _gateways;$/;"	m	class:TelCO
+_keywords	header/trivia.h	/^		Lista<Keyword> _keywords;$/;"	m	class:Trivia
+_mensajes	header/telco.h	/^		Lista<pair<SMS,SMS> > _mensajes;$/;"	m	class:TelCO
+_nroDestino	header/sms.h	/^		Numero _nroDestino;$/;"	m	class:SMS
+_numero	header/gateway.h	/^		Numero _numero;$/;"	m	class:Gateway
+_participantes	header/trivia.h	/^		Lista<Usuario> _participantes;$/;"	m	class:Trivia
+_preguntas	header/trivia.h	/^		Lista<Pregunta> _preguntas;$/;"	m	class:Trivia
+_preguntasPorUsuario	header/trivia.h	/^		Lista< pair<Usuario, int> > _preguntasPorUsuario;$/;"	m	class:Trivia
+_puntaje	header/pregunta.h	/^		Puntaje _puntaje;$/;"	m	class:Pregunta
+_puntajeUsuario	header/trivia.h	/^		Lista< pair<Usuario, int> > _puntajeUsuario;$/;"	m	class:Trivia
+_rtaCorrecta	header/pregunta.h	/^		Texto _rtaCorrecta;$/;"	m	class:Pregunta
+_texto	header/pregunta.h	/^		Texto _texto;$/;"	m	class:Pregunta
+_texto	header/sms.h	/^		Texto _texto;$/;"	m	class:SMS
+_trivias	header/gateway.h	/^		Lista<Trivia> _trivias;$/;"	m	class:Gateway
+_usuarios	header/telco.h	/^		Lista<Usuario> _usuarios;$/;"	m	class:TelCO
+agregar	header/lista.h	/^template<class T> void Lista<T>::agregar(T e)$/;"	f	class:Lista
+agregarAtras	header/lista.h	/^template<class T> void Lista<T>::agregarAtras(T e)$/;"	f	class:Lista
+cabeza	header/lista.h	/^template<class T> const T & Lista<T>::cabeza() const$/;"	f	class:Lista
+cantidadDeApariciones	header/lista.h	/^template<class T> int Lista<T>::cantidadDeApariciones(const T & e) const$/;"	f	class:Lista
+cola	header/lista.h	/^template<class T> void Lista<T>::cola()$/;"	f	class:Lista
+concatenar	header/lista.h	/^template<class T> void Lista<T>::concatenar(const Lista<T> & otraLista)$/;"	f	class:Lista
+darVuelta	header/lista.h	/^template<class T> void Lista<T>::darVuelta()$/;"	f	class:Lista
+eliminarPosicion	header/lista.h	/^void Lista<T>::eliminarPosicion(int pos)$/;"	f	class:Lista
+iesimo	header/lista.h	/^template<class T> const T & Lista<T>::iesimo(int i) const$/;"	f	class:Lista
+iguales	header/lista.h	/^bool iguales(const Lista<T> & l1,const Lista<T> & l2)$/;"	f
+lista	header/lista.h	/^	list<T> lista;$/;"	m	class:Lista
+longitud	header/lista.h	/^template<class T> int Lista<T>::longitud() const$/;"	f	class:Lista
+mismos	header/lista.h	/^bool mismos(const Lista<T> & l1, const Lista<T> & l2) {$/;"	f
+mostrar	header/lista.h	/^template<class T> void Lista<T>::mostrar(ostream & salida) const$/;"	f	class:Lista
+operator <<	header/lista.h	/^ostream & operator<<(ostream & salida,const Lista< pair < T, T > > & l)$/;"	f
+operator <<	header/lista.h	/^ostream & operator<<(ostream & salida,const Lista<T> & l)$/;"	f
+operator ==	header/lista.h	/^template<class T> bool Lista<T>::operator==(const Lista<T> & otraLista) const$/;"	f	class:Lista
+pertenece	header/lista.h	/^template<class T> bool Lista<T>::pertenece(const T & e) const$/;"	f	class:Lista
+posicion	header/lista.h	/^int Lista<T>::posicion(const T & elemento) const$/;"	f	class:Lista
+sacar	header/lista.h	/^template<class T> void Lista<T>::sacar(const T & e)$/;"	f	class:Lista
