@@ -5,6 +5,8 @@
 
 #include <string>
 #include <iostream>
+#include <sstream>
+#include <climits>
 #include "lista.h"
 #include "auxiliares.h"
 

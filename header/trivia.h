@@ -44,6 +44,10 @@ class Trivia {
 		Lista< pair<Usuario, int> > _preguntasPorUsuario;
 		Lista< pair<Usuario, int> > _puntajeUsuario ;
 
+		Lista <string> unparse (string) const ;
+		int nroPregunta (Usuario) const ;
+		template <typename A, typename B> pair <A, B> parte ( Lista < pair <A, B> >, A ) ;
+
 		//Mio
 		Lista <int> donde ;
 
