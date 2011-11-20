@@ -219,3 +219,43 @@ Lista <Texto> Trivia::palabrasRecurrentes(int n) const
 	return q ;
 }
 
+void Trivia::mostrar( std::ostream &os ) const
+{
+	guardar(os) ;
+}
+
+void Trivia::guardar( std::ostream &os ) const
+{
+	os << ENCABEZADO_ARCHIVO  ;
+	_keywords.mostrar(os) ;
+
+
+	os << '[' ;
+	int i = 0 ;
+	while ( i < _preguntas.longitud() )
+	{
+		_preguntas.iesimo(i).guardar(os) ;
+		if ( i < _preguntas.longitud() - 1 ) os << ',' ;
+	}
+	os << ']' ;
+		
+	os << '[' ;
+	i = 0 ;
+	while ( i < _participantes.longitud() )
+	{
+		int g = _participantes.iesimo(i) ;
+		os << '(' << g << ',' << nroPregunta(g) << ',' << puntajeAcumulado(g) << ')' ;
+
+		if ( i < _participantes.longitud() - 1 ) os << ',' ;
+		i++ ;
+	}
+	os << ']' ;
+}
+
+void Trivia::cargar( std::istream &is )
+{
+	char p[5000] ;
+	is.getline (p, 5000, 0) ;
+
+}
+

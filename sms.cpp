@@ -8,32 +8,32 @@ SMS::SMS (const Numero nroDestino, const Texto texto)
 	_texto = texto ;
 }
 
-Numero SMS::nroDestino()
+Numero SMS::nroDestino() const
 {
 	return _nroDestino ;
 }
 
-Texto SMS::texto()
+Texto SMS::texto() const
 {
-	retunr _texto ;
+	return _texto ;
 }
 
-bool SMS::operator ==(const SMS &s)
+bool SMS::operator ==(const SMS &s) const
 {
 	return nroDestino() == s.nroDestino() && texto() == s.texto() ;
 }
 
-void mostrar( std::ostream &os )
+void SMS::mostrar( std::ostream &os ) const
 {
 	os << nroDestino() << ": " << texto() << std::endl ;
 }
 
-void guardar( std::ostream &os )
+void SMS::guardar( std::ostream &os ) const
 {
-	os << ENCABEZADO_ARCHIVO << ' ' nroDestino() << " |" << texto() << std::endl ;
+	os << ENCABEZADO_ARCHIVO << ' ' << nroDestino() << " |" << texto() << std::endl ;
 }
 
-void cargar( std::istream &is )
+void SMS::cargar( std::istream &is )
 {
 	char p ;
 	is >> p >> p >> _nroDestino >> p >> _texto ;
